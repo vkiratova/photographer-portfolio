@@ -1,4 +1,4 @@
-\# Адаптивный лендинг — Портфолио фотографа
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/961e0fe7-f7ab-4740-929a-d48bab70ad61" />\# Адаптивный лендинг — Портфолио фотографа
 
 
 
@@ -40,9 +40,10 @@
 
 \## Ссылка на живой сайт
 
-(будет после публикации на GitHub Pages)
+([будет после публикации на GitHub Pages](https://vkiratova.github.io/photographer-portfolio/?referrer=grok.com))
 
 
 
 Создано декабрь 2025
+
 
