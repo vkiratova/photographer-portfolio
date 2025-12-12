@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Фотографа Alex Photo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Alex Photo</div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#" id="contact-btn">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="burger" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Профессиональная фотография для ваших моментов</h1>
+            <p>Захватывающие кадры, которые сохранят воспоминания навсегда.</p>
+            <button onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})">Посмотреть работы</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <img src="https://www.jules-photographer.com/wp-content/uploads/2021/04/couple-photo-session-002-768x512.webp" alt="Фотограф Alex">
+                <p>Привет! Я Alex, фотограф с 5-летним опытом. Специализируюсь на портретах, свадьбах иイベントах. Моя цель — поймать эмоции и сделать каждый кадр уникальным.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Услуги</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="wedding">Свадебная съёмка</button>
+                <button class="tab-btn" data-tab="portrait">Портреты</button>
+                <button class="tab-btn" data-tab="event">Мероприятия</button>
+            </div>
+            <div id="tab-content">
+                <div id="wedding" class="tab-panel active">
+                    <p>Полный день съёмки от 5000 руб. Включает обработку и альбом.</p>
+                </div>
+                <div id="portrait" class="tab-panel">
+                    <p>Студийные или уличные портреты от 2000 руб. Индивидуальный подход.</p>
+                </div>
+                <div id="event" class="tab-panel">
+                    <p>Корпоративы и праздники от 3000 руб. Динамичные кадры.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Галерея</h2>
+            <div class="slider">
+                <img id="slider-img" src="https://elyroberts.com/wp-content/uploads/2023/02/Black.Butte_.Ranch_.Wedding.Mountians-768x576.jpg" alt="Фото 1">
+                <button id="prev-btn">&lt;</button>
+                <button id="next-btn">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Alex Photo. Все права защищены.</p>
+            <div class="social">
+                <a href="#">Instagram</a>
+                <a href="#">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для формы -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Связаться со мной</h2>
+            <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Сообщение"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
